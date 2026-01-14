@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Wambaya | Finance & Intelligence Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --clay: #A52A2A; --sage: #8A9A5B; }
+        body { font-family: 'Montserrat', sans-serif; transition: background 0.4s; scroll-behavior: smooth; }
+        .dark { background-color: #0a0a0a; color: #e2e8f0; }
+        
+        /* High-Vibrancy Fabric Backdrop: image7.jpg */
+        .hero-canvas {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.92), rgba(10, 10, 10, 0.92)), url('image7.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .micro-label { font-size: 10px; font-weight: 900; letter-spacing: 0.5em; text-transform: uppercase; color: var(--clay); }
+        .body-text { font-size: 13px; line-height: 1.9; font-weight: 300; opacity: 0.7; }
+        
+        .story-map-window { height: 450px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #1a1a1a; }
+        .story-map-window iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body class="dark">
+
+    <nav class="flex justify-between items-center px-12 py-8 sticky top-0 bg-inherit border-b border-white/5 z-50 backdrop-blur-md">
+        <div class="text-xs font-black tracking-[0.4em] uppercase text-white">M. Wambaya</div>
+        <div class="flex items-center gap-12 text-[10px] font-bold uppercase tracking-widest opacity-40">
+            <a href="#intel" class="hover:opacity-100 transition">Intelligence</a>
+            <a href="#projects" class="hover:opacity-100 transition">Systems</a>
+            <a href="#edu" class="hover:opacity-100 transition">Academy</a>
+        </div>
+    </nav>
+
+    <section class="hero-canvas min-h-screen flex items-center px-12 md:px-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center py-24">
+            <div>
+                <span class="micro-label block mb-6">Finance // Economics // Research</span>
+                <h1 class="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8 text-white">
+                    Quantitative Rigor. <br> Storytelling <span class="text-clay italic">Impact.</span>
+                </h1>
+                <div class="body-text space-y-6 text-justify">
+                    <p>I build at the intersection of fiscal precision and data-driven storytelling. My background in <strong>Economics & Finance</strong> from Kenyatta University forms the core of my analytical logic, which I apply to <strong>Accounting, Auditing, and Geospatial Research</strong>.</p>
+                    <p>My methodology intertwines the structured world of <strong>CPA (Part I)</strong> accounting with the dynamic capabilities of modern Data Analytics. Whether analyzing KRA margins or mapping community conservation via <strong>National Geographic</strong> externships, I focus on turning complex datasets into clear, impactful decisions.</p>
+                </div>
+                <div class="flex gap-8 mt-12">
+                    <a href="https://github.com/MichelleWambaya" target="_blank" class="text-[10px] font-black border-b-2 border-clay pb-1 text-white hover:opacity-50">TECHNICAL REPO</a>
+                    <a href="#intel" class="text-[10px] font-black border-b-2 border-clay pb-1 text-white hover:opacity-50">VIEW RESEARCH</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="image2.jpg" class="w-full max-w-sm grayscale border-8 border-white/5 shadow-2xl" alt="Michelle Wambaya Profile">
+            </div>
+        </div>
+    </section>
+
+    <section id="intel" class="py-32 px-12 md:px-24 border-t border-white/5 bg-black/40">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="micro-label mb-12">Geospatial Intelligence & Storytelling</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
+                <div class="lg:col-span-1 space-y-8">
+                    <h3 class="text-3xl font-black uppercase text-white leading-tight">National Geographic <br> Externship</h3>
+                    <p class="body-text">Recipient of the <strong>Extern Certificate of Successful Completion</strong> for research on geospatial analysis and conservation issues within the local community. I utilized ArcGIS to intertwine technical mapping with effective storytelling.</p>
+                    <div class="p-6 border-l-4 border-clay bg-white/5 text-[11px] font-bold uppercase tracking-widest opacity-60">
+                        Focus: Community Conservation, Data Visualization, and Mapping
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="story-map-window">
+                        <iframe src="https://storymaps.arcgis.com/stories/726e362075b1486aae16ee8ded558846"></iframe>
+                    </div>
+                    <p class="text-[10px] mt-4 opacity-30 text-right uppercase tracking-widest italic">Interactive Story Map Preview</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-12 md:px-24">
+        <h2 class="micro-label mb-20 text-center text-white">Integrated Systems</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <div class="group border border-white/5 p-8 bg-white/5 hover:border-clay transition">
+                <span class="text-clay font-bold text-[10px] uppercase">Auditing & Tax</span>
+                <h3 class="font-bold text-sm uppercase mt-4 mb-4 text-white">KRA Margin Analyzer</h3>
+                <p class="body-text mb-8">Integrated PWA for Kenyan SMEs to track real-time profit after eTIMS obligations. Built to bridge the gap between technical code and tax compliance logic.</p>
+                <a href="https://github.com/MichelleWambaya/KRA-Margin_Analyzer" target="_blank" class="text-[10px] font-black text-clay">VIEW AUDIT LOGIC</a>
+            </div>
+
+            <div class="group border border-white/5 p-8 bg-white/5 hover:border-clay transition">
+                <span class="text-clay font-bold text-[10px] uppercase">Cash Flow Management</span>
+                <h3 class="font-bold text-sm uppercase mt-4 mb-4 text-white">Hustle-Vault</h3>
+                <p class="body-text mb-8">Tax compliance and M-Pesa transaction categorization tool for solopreneurs. Designed for audit readiness and fiscal safety tracking.</p>
+                <a href="https://github.com/MichelleWambaya/Hustle-Vault" target="_blank" class="text-[10px] font-black text-clay">VIEW REPO</a>
+            </div>
+
+            <div class="group border border-white/5 p-8 bg-white/5 hover:border-clay transition">
+                <span class="text-clay font-bold text-[10px] uppercase">Corporate Finance</span>
+                <h3 class="font-bold text-sm uppercase mt-4 mb-4 text-white">KURA Finance Attaché</h3>
+                <p class="body-text mb-8">Quarterly financial reporting, budget analysis, and cash flow tracking within the Kenya Urban Roads Authority.</p>
+                <div class="text-[10px] font-bold opacity-40 uppercase tracking-widest">Audit Support Specialist</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="edu" class="py-32 px-12 md:px-24 relative overflow-hidden bg-white/5">
+        <img src="image.jpg" class="absolute right-0 bottom-0 w-80 md:w-[600px] opacity-10 grayscale pointer-events-none" alt="Academic Background">
+        
+        <div class="max-w-4xl relative z-10">
+            <h2 class="micro-label mb-16 text-white">Academic & Research Evolution</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div class="space-y-12">
+                    <div>
+                        <h4 class="font-bold text-sm uppercase mb-4 text-clay italic">BSc Economics & Finance</h4>
+                        <p class="text-[10px] tracking-widest uppercase mb-4 opacity-40">Kenyatta University | 2021 - 2025</p>
+                        <p class="body-text text-justify">Education focused on <strong>Quantitative Economics, IT for Finance, and Research Ethics</strong>. This foundation ensures that every audit and technical system is grounded in institutional-grade logic.</p>
+                    </div>
+                    <div class="p-8 border-l-2 border-clay bg-white/5">
+                        <h4 class="font-bold text-sm uppercase mb-2 text-white">Professional Path</h4>
+                        <ul class="body-text space-y-3 font-bold uppercase tracking-widest text-[10px]">
+                            <li>+ Certified Public Accountant (Part I)</li>
+                            <li>+ ALX Data Engineering & Analytics</li>
+                            <li>+ AI for Developers Specialization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <img src="20250615_082314.jpg" class="w-full border border-white/10 shadow-lg" alt="Nat Geo Certificate">
+                    <p class="body-text italic">"Combining financial reporting with geospatial research to offer solutions that make an impact through effective storytelling."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 px-12 border-t border-white/5 text-center text-white">
+        <p class="text-[9px] tracking-[1em] uppercase opacity-20">© 2026 Michelle Wambaya | Nairobi, KE</p>
+    </footer>
+
+</body>
+</html>
